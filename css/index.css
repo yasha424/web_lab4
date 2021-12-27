@@ -46,9 +46,9 @@ header nav {
 .login-btn {
     border-radius: 8px;
     padding: 10px;
-    min-width: 60px;
-    background-color: var(--black-color);
-    color: var(--white-color);
+    min-width: 40px;
+    background-color: var(--light-green);
+    color: var(--black-color);
 }
 
 main {
