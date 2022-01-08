@@ -16,7 +16,7 @@ body {
 }
 
 header nav {
-    margin: 10px 10px 0 10px;
+    margin: 10px 10px 0;
     padding: 10px 20px;
     border-radius: 8px;
     background-color: var(--light-green);
@@ -107,6 +107,10 @@ main {
     color: var(--black-color);
 }
 
+header nav .checkbox {
+    display: none;
+}
+
 .slider .slides .checkbox {
     display: none;
 }
@@ -115,107 +119,103 @@ main {
     display: flex;
 }
 
-header nav .checkbox {
-  display: none;
-}
-
 header nav .list a::before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  height: 1px;
-  left: 0;
-  width: 0;
-  background-color: var(--black-color);
-  transition: var(--transition-time);
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    left: 0;
+    width: 0;
+    background-color: var(--black-color);
+    transition: var(--transition-time);
 }
 
 header nav .list a:hover::before {
-  width: 100%;
+    width: 100%;
 }
 
 header nav .btn {
-  display: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  cursor: pointer;
-  position: relative;
-  background-color: var(--light-green);
-  transition: var(--transition-time);
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--light-green);
+    transition: var(--transition-time);
 }
 
 header nav .btn::before,
 header nav .btn::after {
-  transition: var(--transition-time);
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 90%;
-  background-color: var(--black-color);
+    transition: var(--transition-time);
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 90%;
+    background-color: var(--black-color);
 }
 
 header nav .btn::before {
-  top: 30%;
+    top: 30%;
 }
 
 header nav .btn::after {
-  bottom: 30%;
+    bottom: 30%;
 }
 
 @media screen and (max-width: 480px) {
-  header {
-    position: absolute;
-    top: 0;
-  }
+    header {
+        position: absolute;
+        top: 0;
+    }
 
-  header nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    position: fixed;
-    margin-top: 10px;
-    left: 10px;
-    right: 10px;
-  }
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        position: fixed;
+        margin-top: 10px;
+        left: 10px;
+        right: 10px;
+    }
 
-  header nav .list {
-    height: 80vh;
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    margin-bottom: 10px;
-    overflow-y: auto;
-  }
+    header nav .list {
+        height: 80vh;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        margin-bottom: 10px;
+        overflow-y: auto;
+    }
 
-  header nav .checkbox:checked ~ .list {
-    display: flex;
-  }
+    header nav .checkbox:checked ~ .list {
+        display: flex;
+    }
 
-  header nav .login-btn {
-    display: none;
-  }
+    header nav .login-btn {
+        display: none;
+    }
 
-  header nav .checkbox:checked ~ .login-btn {
-    display: flex;
-  }
+    header nav .checkbox:checked ~ .login-btn {
+        display: flex;
+    }
 
-  header nav .checkbox:checked ~ .btn::before {
-    left: 4%;
-    top: 40%;
-    transform: rotate(45deg);
-  }
+    header nav .checkbox:checked ~ .btn::before {
+        left: 4%;
+        top: 40%;
+        transform: rotate(45deg);
+    }
 
-  header nav .checkbox:checked ~ .btn::after {
-    left: 4%;
-    top: 40%;
-    transform: rotate(135deg);
-  }
+    header nav .checkbox:checked ~ .btn::after {
+        left: 4%;
+        top: 40%;
+        transform: rotate(135deg);
+    }
 
-  header nav .logo {
-    margin-right: auto;
-  }
+    header nav .logo {
+        margin-right: auto;
+    }
 
-  header nav .btn {
-    display: block;
-  }
+    header nav .btn {
+        display: block;
+    }
 }
