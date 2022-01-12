@@ -1,0 +1,29 @@
+{
+    "name": "web_lab4",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prettier": "prettier --ignore-path .gitignore -c .",
+        "prettier-fix": "prettier --ignore-path .gitignore -w .",
+        "stylelint": "stylelint --ignore-pattern .gitignore **/*.css",
+        "stylelint-fix": "stylelint --fix --ignore-pattern .gitignore **/*.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yasha424/web_lab4.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yasha424/web_lab4/issues"
+    },
+    "homepage": "https://github.com/yasha424/web_lab4#readme",
+    "dependencies": {
+        "husky": "^7.0.4",
+        "prettier": "^2.5.1",
+        "stylelint": "^14.2.0",
+        "stylelint-config-standard": "^24.0.0"
+    }
+}
